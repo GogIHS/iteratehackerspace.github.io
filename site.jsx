@@ -84,26 +84,35 @@ IBM+Innovative+Solutions+and+Technologies+Center/@40.183162,\
           <meta charSet={'utf-8'}></meta>
           <meta name={"viewport"} content={"width=device-width, initial-scale=1"}></meta>
           <link rel={"stylesheet"} href={bstrap}/>
-	        <style>{`div { opacity : 0.95 }`}</style>
-          <style>{
-`video#bgvideo {
-position: fixed;
-top: 50%;
-left: 50%;
-min-width: 100%;
-min-height: 100%;
-width: auto;
-height: auto;
-z-index: -100;
--ms-transform: translateX(-50%) translateY(-50%);
--moz-transform: translateX(-50%) translateY(-50%);
--webkit-transform: translateX(-50%) translateY(-50%);
-transform: translateX(-50%) translateY(-50%);
+            <style>{`div { opacity : 0.95 }`}</style>
+            <style>{
+              `video#bgvideo {
+              position: fixed;
+              top: 50%;
+              left: 50%;
+              min-width: 100%;
+              min-height: 100%;
+              width: auto;
+              height: auto;
+              z-index: -100;
+              -ms-transform: translateX(-50%) translateY(-50%);
+              -moz-transform: translateX(-50%) translateY(-50%);
+              -webkit-transform: translateX(-50%) translateY(-50%);
+              transform: translateX(-50%) translateY(-50%);
 
-background-size: cover;
-}`
+              background-size: cover;
             }
-          </style>
+
+              @media (max-width: 482px) {
+                h2 {
+                  font-size: 13px
+                }
+              }
+`
+              }
+</style>
+
+
         </head>
         <body>
           <video playsInline autoPlay muted loop id={'bgvideo'}>
